@@ -81,7 +81,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'travel_db',
-        'USER': 'root',
+        'USER': 'travel',
         'PASSWORD': '1234',
         'HOST': '127.0.0.1',
         'PORT': '3306',
