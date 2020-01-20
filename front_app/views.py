@@ -11,3 +11,7 @@ def backend_index(request):
 
 def login_page(request):
     return render(request, "backend_login.html")
+
+
+def registration_page(request):
+    return render(request, 'creating_new_account.html')
