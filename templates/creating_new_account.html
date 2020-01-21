@@ -33,17 +33,23 @@
                 <div class="card-body">
                     <h2 class="title">Registration Form</h2>
                     <form method="POST">
+                        <div class="input-group">
+                            <label class="label">Select Role</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option>Admin</option>
+                                    <option>Manager</option>
+                                    <option>User</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">first name</label>
+                                    <label class="label">Name</label>
                                     <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
                                 </div>
                             </div>
                         </div>
@@ -85,18 +91,6 @@
                                     <label class="label">Phone Number</label>
                                     <input class="input--style-4" type="text" name="phone">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Subject</label>
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject">
-                                    <option disabled="disabled" selected="selected">Choose option</option>
-                                    <option>Subject 1</option>
-                                    <option>Subject 2</option>
-                                    <option>Subject 3</option>
-                                </select>
-                                <div class="select-dropdown"></div>
                             </div>
                         </div>
                         <div class="p-t-15">
