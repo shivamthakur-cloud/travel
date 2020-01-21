@@ -48,12 +48,13 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 	(21, 'Can delete user role', 7, 'delete_userrole');
 /*!40000 ALTER TABLE `auth_permission` ENABLE KEYS */;
 
--- Dumping data for table travel_db.auth_user: ~2 rows (approximately)
+-- Dumping data for table travel_db.auth_user: ~3 rows (approximately)
 DELETE FROM `auth_user`;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
 	(1, 'pbkdf2_sha256$100000$IhCcBHoDh9Nb$1Ae0s1VycX5TII+6MkbIolfAGP2twYvU9B/EfEOulhE=', NULL, 1, 'travel_admin', '', '', '', 1, 1, '2020-01-14 10:26:01'),
-	(2, 'pbkdf2_sha256$100000$Kp9PyLZ9Iajm$mA5/kxIfTOvHawU0OA4M26IX5pcR0cVprjQrafKLqGo=', '2020-01-16 10:15:46', 1, 'shiva', '', '', '', 1, 1, '2020-01-16 10:15:04');
+	(2, 'pbkdf2_sha256$100000$Kp9PyLZ9Iajm$mA5/kxIfTOvHawU0OA4M26IX5pcR0cVprjQrafKLqGo=', '2020-01-16 10:15:46', 1, 'shiva', '', '', '', 1, 1, '2020-01-16 10:15:04'),
+	(3, 'pbkdf2_sha256$100000$PkTt4mr4mwWK$NL+LhpBHXiKfDlsZuV6RRaw/uphyhNO17qRkq7hfD8Y=', NULL, 1, 'travel', '', '', '', 1, 1, '2020-01-16 10:53:54');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 
 -- Dumping data for table travel_db.auth_user_groups: ~0 rows (approximately)
