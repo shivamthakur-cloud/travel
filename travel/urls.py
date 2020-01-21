@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from front_app import views
+from backend_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^backend_index/$', views.backend_index),
     url(r'^login_page/$', views.login_page),
     url(r'^registration/$', views.registration_page),
+    url(r'^show/$', views.show_page),
 ]
