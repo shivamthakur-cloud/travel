@@ -5,11 +5,11 @@ from email.mime.multipart import MIMEMultipart
 
 def verify_link_mail(receiver_mail, link, name):
     msg = MIMEMultipart()
-    msg['From'] = 'Travel Verification Mail'
+    msg['From'] = 'Western Himalayas'
     msg['To'] = receiver_mail
     msg['Subject'] = 'Verify E-Mail'
 
-    body = 'Hello Mr/Ms.{}, Your verify link is: {}'.format(name, link)
+    body = 'Hello Mr/Ms.{}, Your verify link is: {}. Do verify if its you, else Report!'.format(name, link)
 
     message = MIMEText(body, 'plain')
 
@@ -21,6 +21,7 @@ def verify_link_mail(receiver_mail, link, name):
     server.login('shivawork.py@gmail.com', 'h@teEY0U')
     server.sendmail('shivawork.py@gmail.com', receiver_mail, text)
     server.quit()
+    print('eMail sent!')
 
 
-# verify_link_mail('shivamthaur7172@gmail.com', 'vnnnvnnvnvjfj3uuhuhbhbrrjrb', 'Shivam')
+verify_link_mail('shivakalyan3243@gmail.com', 'vnnnvnnvnvjfj3uuhuhbhbrrjrb', 'Shiva')

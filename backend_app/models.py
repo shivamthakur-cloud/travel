@@ -15,7 +15,3 @@ class RoleDetails(models.Model):
     address = models.TextField(max_length=255, unique=True, null=True, blank=True)
     gender = models.CharField(max_length=255, blank=True, null=True, default="")
 
-    verify_link = models.CharField(max_length=255, default="", null=True, blank=True)
-    otp = models.CharField(max_length=255, default="", null=True, blank=True)
-    otp_time = models.CharField(max_length=255, default="", null=True, blank=True)
-    is_active = models.NullBooleanField(default=0)

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from backend_app.models import UserRole
 
 
 def index_page(request):
@@ -18,4 +19,5 @@ def registration_page(request):
 
 
 def show_page(request):
-    return render(request, 'show.html')
+    user_role_data = UserRole.objects.all()
+    return render(request, 'show.html', {'role_data': user_role_data})

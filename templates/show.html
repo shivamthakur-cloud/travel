@@ -8,7 +8,7 @@
 <div>
     <table>
         <thead>
-        <th style="padding: 5px 5px 5px 5px">Role.Id</th>
+        <th style="padding: 5px 5px 5px 5px" >Role.Id</th>
         <th style="padding: 5px 5px 5px 5px">Role.Name</th>
         </thead>
 
@@ -22,31 +22,5 @@
     </table>
 </div>
 
-<br> <br> <br>
-    <div>
-        <table>
-            <thead>
-                <th style="padding: 5px 5px 5px 5px">Id</th>
-                <th style="padding: 5px 5px 5px 5px">Name</th>
-                <th style="padding: 5px 5px 5px 5px">Email</th>
-                <th style="padding: 5px 5px 5px 5px">Mobile</th>
-                <th style="padding: 5px 5px 5px 5px">Address</th>
-                <th style="padding: 5px 5px 5px 5px">Gender</th>
-            </thead>
-            {{ data }}
-            {% if data %}
-                <tr>
-                    <td style="padding: 5px 7px 5px 5px">{{data.role_id.role_name}}</td>
-                    <td style="padding: 5px 7px 5px 5px">{{data.name}}</td>
-                    <td style="padding: 5px 7px 5px 5px">{{data.email}}</td>
-                    <td style="padding: 5px 7px 5px 5px">{{data.mobile}}</td>
-                    <td style="padding: 5px 7px 5px 5px">{{data.address}}</td>
-                    <td style="padding: 5px 7px 5px 5px">{{data.gender}}</td>
-                </tr>
-        {% endif %}
-
-
-        </table>
-    </div>
 </body>
 </html>
