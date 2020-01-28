@@ -9,7 +9,7 @@ def verify_link_mail(receiver_mail, link, name):
     msg['To'] = receiver_mail
     msg['Subject'] = 'Verify E-Mail'
 
-    body = 'Hello Mr/Ms.{}, Your verify link is: {}. Do verify if its you, else Report!'.format(name, link)
+    body = 'Hello Mr/Ms.{}, \nYour verify link is: {}.\n Do verify if its you, else Report!'.format(name, link)
 
     message = MIMEText(body, 'plain')
 
@@ -24,4 +24,4 @@ def verify_link_mail(receiver_mail, link, name):
     print('eMail sent!')
 
 
-verify_link_mail('shivakalyan3243@gmail.com', 'vnnnvnnvnvjfj3uuhuhbhbrrjrb', 'Shiva')
+# verify_link_mail('shivakalyan3243@gmail.com', 'THIS-IS-A-SAMPLE-VERIFY-LINK(DO NOT CLICK ON THIS)', 'Shiva')
